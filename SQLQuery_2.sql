@@ -9,8 +9,8 @@
 -- SELECT BusinessEntityID,LastName from Person.Person where LastName like 'J%' or LastName like 'S%';
 
 
-exec sp_columns from HumanResources.EmployeePayHistory;
-GO
+-- exec sp_columns from HumanResources.EmployeePayHistory;
+-- GO
 declare @average FLOAT 
 set @average = (select AVG(all Rate) from HumanResources.EmployeePayHistory)
 PRINT @average
